@@ -1,11 +1,14 @@
 Configure Privileged Identity Management
 Alec I. Gillis September 2026
+
 Overview
 Privileged Identity Management (PIM) is a Microsoft Entra ID service that enables just-in-time (JIT) privileged access to Azure and Microsoft Entra roles. Instead of granting permanent admin access — which creates a persistent attack surface — PIM requires users to request and activate elevated access for a limited time window, with optional approval and justification requirements.
 This lab will enumerate the process of configuring PIM for the Conditional Access Administrator role, enforcing an approval-based activation workflow, and validating that elevated access works as expected.
+
 Lab Environment
 This lab runs on a M365 Tenant with no special configuration needed.
 The M365 Tenant provided for this lab has pre-established authentication and user data. Nonetheless, the process for configuring PIM should apply uniformly with any organization using M365/Entra ID for Identity Management.
+
 Lab Tasks
 This lab uses two accounts: a Global Administrator account, and a sample User account. With these accounts, we will accomplish the following:
 1.
